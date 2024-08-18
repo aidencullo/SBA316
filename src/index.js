@@ -39,3 +39,11 @@ jackpot.style.padding = "10px";
 jackpot.style.margin = "10px";
 jackpot.style.borderRadius = "5px";
 jackpot.style.backgroundColor = "yellow";
+
+// Use the parent-child-sibling relationship to navigate between elements at least once (firstChild, lastChild, parentNode, nextElementSibling, etc.).
+
+
+jackpot.appendChild(document.createElement("div"));
+jackpot.lastChild.textContent = "Winners will be announced on 12/31/2021.";
+
+
