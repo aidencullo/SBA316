@@ -44,6 +44,14 @@ jackpot.style.backgroundColor = "yellow";
 
 
 jackpot.appendChild(document.createElement("div"));
-jackpot.lastChild.textContent = "Winners will be announced on 12/31/2021.";
+jackpot.lastChild.textContent = "Participating Cities";
 
 
+// Iterate over a collection of elements to accomplish some task.
+jackpot.lastChild.appendChild(document.createElement("ul"));
+const cities = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix", "Philadelphia", "San Antonio", "San Diego", "Dallas", "San Jose"];
+cities.forEach((city) => {
+	const li = document.createElement("li");
+	li.textContent = city;
+	jackpot.lastChild.lastChild.appendChild(li);
+});
