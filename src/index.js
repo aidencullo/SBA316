@@ -55,3 +55,28 @@ cities.forEach((city) => {
 	li.textContent = city;
 	jackpot.lastChild.lastChild.appendChild(li);
 });
+
+
+// Use the DocumentFragment interface or HTML templating with the cloneNode method to create templated content. 
+
+const template = document.createElement("template");
+template.innerHTML = `
+	<div>
+		<h2>Winners</h2>
+		<ul>
+			<li>John Doe</li>
+			<li>Jane Doe</li>
+			<li>John Smith</li>
+			<li>Jane Smith</li>
+		</ul>
+	</div>
+`;
+
+const winners = document.querySelector("#winners");
+winners.style.border = "1px solid black";
+winners.style.padding = "10px";
+winners.style.margin = "10px";
+winners.style.borderRadius = "5px";
+winners.style.backgroundColor = "lightblue";
+winners.appendChild(template.content.cloneNode(true));
+
