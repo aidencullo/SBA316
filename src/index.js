@@ -94,3 +94,17 @@ if (innerHeight > 500) {
 } else {
 	alert("Your screen is too short to view this page!");
 }
+
+// Modify at least one attribute of an element in response to user interaction.
+const button = document.querySelector("#dark-mode");
+button.textContent = "Change Theme";
+button.style.padding = "10px";
+button.addEventListener("click", () => {
+  if (jackpot.style.backgroundColor === "yellow") {
+		jackpot.style.backgroundColor = "black";
+		winners.style.backgroundColor = "darkgray";
+		return;
+  }
+  jackpot.style.backgroundColor = "yellow";
+  winners.style.backgroundColor = "lightblue";
+});
