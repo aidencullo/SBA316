@@ -80,3 +80,17 @@ winners.style.borderRadius = "5px";
 winners.style.backgroundColor = "lightblue";
 winners.appendChild(template.content.cloneNode(true));
 
+
+// Use at least two Browser Object Model (BOM) properties or methods.
+const { innerWidth, innerHeight, location, navigator } = window;
+if (innerWidth > 1000) {
+	alert("Your screen is wide enough to view this page!");
+} else {
+	alert("Your screen is too narrow to view this page!");
+}
+
+if (innerHeight > 500) {
+	alert("Your screen is tall enough to view this page!");
+} else {
+	alert("Your screen is too short to view this page!");
+}
