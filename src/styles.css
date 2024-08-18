@@ -7,7 +7,8 @@ html {
 }
 
 body {
-  background: url('https://images.pexels.com/photos/1695737/pexels-photo-1695737.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center fixed;
+  background: url('https://images.pexels.com/photos/3483098/pexels-photo-3483098.jpeg') no-repeat center center fixed;
+
   background-size: cover;
   color: #444;
   display: flex;
