@@ -26,3 +26,16 @@ function validateRegistration(evt) {
 }
 
 registration.addEventListener("submit", validateRegistration);
+
+// Cache at least one element using querySelector or querySelectorAll.
+const jackpot = document.querySelector("#jackpot");
+jackpot.textContent = "JACKPOT: $1,000,000";
+jackpot.style.color = "red";
+jackpot.style.fontSize = "2em";
+jackpot.style.fontWeight = "bold";
+jackpot.style.textAlign = "center";
+jackpot.style.border = "1px solid black";
+jackpot.style.padding = "10px";
+jackpot.style.margin = "10px";
+jackpot.style.borderRadius = "5px";
+jackpot.style.backgroundColor = "yellow";
